@@ -1,3 +1,6 @@
+import sys
+sys.modules["audioop"] = None  # <<< ignora o audioop que não existe no Python 3.13
+
 import discord
 from discord.ext import tasks
 from discord.ui import View, Button, Modal, TextInput
