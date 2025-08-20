@@ -1,9 +1,12 @@
+import sys
+sys.modules['audioop'] = None  # <<< PATCH para evitar erro de voz no Render
+
 import discord
 from discord.ext import tasks
 from discord.ui import View, Button, Modal, TextInput
 import datetime
 import pytz
-import os  # <<< IMPORTANTE para pegar o token de variável de ambiente
+import os  # para pegar o token da variável de ambiente
 
 GUILD_ID = 1391955329545146498  # seu ID da guild
 
