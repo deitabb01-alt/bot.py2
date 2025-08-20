@@ -3,7 +3,7 @@ from discord.ext import tasks
 from discord.ui import View, Button, Modal, TextInput
 import datetime
 import pytz
-import os  # para pegar o token do ambiente no Render
+import os  # <<< IMPORTANTE para pegar o token de variável de ambiente
 
 GUILD_ID = 1391955329545146498  # seu ID da guild
 
